@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* padding-top: 1px; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(24, 16, 73); */
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(13, 99, 20));
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    /* margin-top: 0; */
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+nav ul li a:hover {
+    color: rgb(127, 171, 127);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bolder;
+    /* font-family: "Playwrite NO", cursive; */
+    /* font-family: "Roboto Slab", serif; */
+    font-family: "Source Code Pro", monospace;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgb(76, 170, 76), rgb(129, 238, 129), rgb(161, 235, 161), white);
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    /* gap: 40px; */
+    align-items: center;
+    margin-top: 0;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-left .one {
+    font-size: 60px;
+    color: rgb(22, 68, 30);
+    font-weight: bolder;
+}
+
+.hero-left .two {
+    font-size: 40px;
+}
+
+.hero-right img {
+    border-radius: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(19, 54, 19);
+    color: white;
+    padding: 7px 7px;
+    margin: 0 2px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bolder;
+    transition: all 0.1s;
+    /* text-decoration: none; */
+}
+
+.btn:hover {
+    background-color: rgb(98, 156, 98);
+}
+
+.button-container {
+    padding: 9px 0;
+}
+
+/* project section */
+
+.project {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    padding: 22px 65px;
+    border-top: 1px solid rgba(16, 63, 16, 0.222);
+    background-image: linear-gradient(to left, rgb(76, 170, 76), rgb(129, 238, 129), rgb(161, 235, 161), white);
+}
+
+.project-image img {
+    width: 49.5vw;
+    /* width: 100%; */
+    max-width: 500px;
+    padding: 15px;
+    margin: 34px 0;
+    border-radius: 18px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.project-info .text {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.project-info p {
+    padding: 10px 0;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: rgb(22, 66, 22);
+    padding: 40px;
+    color: rgb(214, 234, 214);
+    align-items: center;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Source Code Pro", monospace;
+}
+
+@media screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .hero-right img {
+        width: 300px;
+        align-items: center;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero-left .one {
+        font-size: 40px;
+    }
+
+    .project {
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero-left .one {
+        font-size: 30px;
+    }
+
+    .hero-left .two {
+        font-size: 30px;
+    }
+
+    .hero-right img {
+        width: 250px;
+        align-items: center;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 1px;
+        align-items: center;
+    }
+
+    .project-image img {
+        width: 80vw;
+        margin: 35px;
+    }
+
+    .b-cont {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 130px;
+    }
+}
+
+form {
+    border: 1px solid black;
+    padding: 30px;
+    align-items: center;
+    /* margin-top: 40px; */
+    margin: 30px;
+}
+
+.f_container {
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+}
